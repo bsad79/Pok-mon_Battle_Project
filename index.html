@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Project Pokémon Battle</title>
+
+            <meta charset="UTF-8" name="viewport" 
+            content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+
+            <link rel="stylesheet" type="text/css" href="./CSS/style.css"> 
+        </head>
+        <body>
+            <div id="cabeçalho">
+                <div class="dropdown">
+                    <button class="dropbtn">Gerações</button>
+                    <div class="dropdown-content">
+                        <a href="#geracao4" onclick="transition('gen4')">4ª Geração</a>
+                        <a href="#geracao5" onclick="transition('gen5')">5ª Geração</a>
+                        <a href="#geracao6" onclick="transition('gen6')">6ª Geração</a>
+                        <a href="#geracao7" onclick="transition('gen7')">7ª Geração</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Ajuda</button>
+                    <div class="dropdown-content">
+                        <a href="https://calc.pokemonshowdown.com/?gen=5">Calculadora de dano</a>
+                        <a href="#">Treinando seu Pokémon</a>
+                        <a href="https://pokemondb.net/type">Tabela de tipos</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Batlhar</button>
+                </div>
+            </div>
+
+            <div id="main">
+                <div id="intro">
+                    <h1>Bem vindo!</h1>
+                    <p>Este é um site feito para servir de referência em relação as informações relacionadas
+                        as disputas realizadas através dos jogos da franquia Pokémon realizadas entre os
+                        integrantes do grupo de amigps auto-intitulado Remove Kebab.
+                    </p>
+                </div>
+
+                <div id="geracao4">
+                    <h1>4ª Geração</h1>
+                    <p>A quarta geração diz respeito aos jogos Pokémon Diamond Version, 
+                        Pokémon Pearl Version, Pokémon Platinum Version, Pokémon Heart Gold
+                        e Pokémon Soul Silver.
+                        A batalha foi realizada nos jogos Pokémon Heart Gold e Pokémon Soul Silver,
+                        permitindo a participação de Pokémon obtidos nos jogos anteriores.
+                    </p>
+
+                    <div>
+                        <div>Modalidades</div>
+                        <ul>
+                            <li>
+                                <a href="#VL">
+                                    <span>1</span>
+                                    <span>Vale Tudo</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2>Modalidades</h2>
+
+                    <h3 id="VL">Vale Tudo</h3>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula OHKO:<br>
+                        Os movimentos Fissure, Sheer Cold, Guillotine e Horn Drill são proibidos.
+                    </p>
+                    <p>Cláusula de itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+
+                </div>
+
+                <div id="geracao5">
+                    <h1>5ª Geração</h1>
+                    <p>A quinta geração diz respeito aos jogos Pokémon Black Version, 
+                        Pokémon White Version, Pokémon Black Version 2 e Pokémon White Version 2.
+                        A batalha será realizada nos jogos Pokémon Black Version 2 e Pokémon White Version 2,
+                        permitindo a participação de Pokémon obtidos nos jogos anteriores, incluindo os que
+                        foram obtidos em outras gerações.
+                    </p>
+
+                    <div>
+                        <div>Índice</div>
+                        <ul>
+                            <li>
+                                <a href="#5REGRAS">
+                                    <span>1</span>
+                                    <span>Regras Gerais</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#5MOD">
+                                    <span>2</span>
+                                    <span>Modalidades</span>
+                                </a>
+                                <li>
+                                    <a href="#5OU">
+                                        <span>2.1</span>
+                                        <span>Over Used</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#5DOU">
+                                        <span>2.2</span>
+                                        <span>Doubles</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#5LC">
+                                        <span>2.3</span>
+                                        <span>Little Cup</span>
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 id="5REGRAS">Regras Gerais</h2>
+                    <p>Abaixo estão regras que se aplicam para todas as modalidades.</p>
+                    <p>Cláusula das Espécies:<br>
+                        Um jogador não pode ter dois Pokémon com o mesmo número na pokedéx nacional.
+                    </p>
+                    <p>Cláusula da Evasão:<br>
+                        Um Pokémon não pode ter os movimentos Double Team ou Minimize.
+                    </p>
+                    <p>Cláusula OHKO:<br>
+                        Os movimentos Fissure, Sheer Cold, Guillotine e Horn Drill são proibidos.
+                    </p>
+                    <p>Cláusula do Sono:<br>
+                        Só é permitido induzir um Pokémon para dormir na equipe do adversário por vez.
+                    </p>
+                    <p>Cláusula Moody:<br>
+                        A habilidade Moody está banida por ser completamente aleatória e ir contra o espírito 
+                        esportivo.
+                    </p>
+                    <p>Cláusula da Batalha Infinita:<br>
+                        É proibido um Pokémon segurar uma Leppa Berry com o movimento Recycle e qualquer um
+                        dos outros movimentos citados abaixo:<br>
+                        Heal Pulse<br>
+                        Milk Drink<br>
+                        Moonlight<br>
+                        Morning Sun<br>
+                        Recover<br>
+                        Roost<br>
+                        Slack Off<br>
+                        Soft-Boiled<br>
+                        Wish<br>
+                        Pain Split<br>
+                        Fling<br>
+                    </p>
+
+                    <h2 id="5MOD">Modalidades</h2>
+
+                    <h3 id="5OU">Over Used</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Over Used (OU, ou muito utilizado) é o tier de baseado em uso fundamental da 
+                        Smogon. Com a excessão dos Pokémon banidos para o tier Uber, todos os Pokémon
+                        podem ser usados no OU, incluindo Pokémon de tiers inferiores.Apesar disso, apenas 
+                        aqueles Pokémon que representam pelo menos ~ 3,41% do uso total ponderado do tier 
+                        são designados como 'OU'. Um Pokémon é verdadeiramente 'OU' se um jogador competitivo 
+                        típico tiver mais de 50% de probabilidade de encontrar aquele Pokémon pelo menos 
+                        a cada 20 batalhas.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Estão banidos os Pokémon pertencentes ao tier 
+                        <a href="https://www.smogon.com/dex/bw/formats/uber/">Ubers</a>
+                    </p>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Cláusula do Relógio:<br>
+                        Se um jogador não decidir sua ação antes do fim do tempo estimado, o mesmo é
+                        automaticamente desqualificado.
+                    </p>
+                    <p>Cláusula Baton Pass:<br>
+                        Só pode haver um Pokémon com o movimento Baton Pass numa equipe.
+                        Também é proibido passar um boost de velocidade juntamente com qualquer outro.
+                    </p>
+                    <p>Cláusula do Clima:<br>
+                        Equipes não podem haver Pokémon com as seguintes combinações de habilidades:<br>
+                        Drought e Chlorophyll<br>
+                        Drizzle e Swift Swim<br>
+                        Stream e Sand Rush<br>
+                        Contudo essas habilidades podem ser usadas separadamente.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Dark Void<br>
+                        Grass Whistle<br>
+                        Hypnosis<br>
+                        Lovely Kiss<br>
+                        Sing<br>
+                        Sleep Powder<br>
+                        Spore<br>
+                        Swagger<br>
+                        Yawn<br>
+                    </p>
+                    <p>As seguites habilidades estão banidas:<br>
+                        Arena Trap<br>
+                        Sand Rush<br>
+                        Sand Veil<br>
+                        Shadow Tag<br>
+                        Snow Cloak<br>
+                    </p>
+                    <p>O item Soul Dew está banido</p>
+
+
+
+                    <h3 id="5DOU">Doubles</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Doubles (Doubles OU) é um formato onde ambos os jogadores 
+                        possuem dois Pokémon em campo ao mesmo tempo. Todos os Pokémon com excessão daqueles 
+                        que foram banidos (lista abaixo) podem ser usados independentemente de sua performance 
+                        em batalhas 1 contra 1.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Os Pokémon a seguir estão banidos:<br>
+                        Mewtwo<br>
+                        Lugia<br>
+                        Ho-oh<br>
+                        Kyogre<br>
+                        Groudon<br>
+                        Rayquaza<br>
+                        Jirachi<br>
+                        Dialga<br>
+                        Palkia<br>
+                        Giratina<br>
+                        Giratina-Origin<br>
+                        Arceus<br>
+                        Reshiram<br>
+                        Zekrom<br>
+                        Kyurem-White<br>
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Dark Void<br>
+                        Gravity<br>
+                    </p>
+                    <p>O item Soul Dew está banido</p>
+
+
+
+                    <h3 id="5LC">Little Cup</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Little Cup é um formato em que os jogadores só podem usar Pokémon que ainda 
+                        não evoluíram, mas são capazes de evoluir.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula do Relógio:<br>
+                        Se um jogador não decidir sua ação antes do fim do tempo estimado, o mesmo é
+                        automaticamente desqualificado.
+                    </p>
+                    <p>Cláusula Level 5:<br>
+                        Todos os Pokémon devem estar no nível 5.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Dragon Rage<br>
+                        Sonic Boom<br>
+                    </p>
+                    <p>As seguites habilidades estão banidas:<br>
+                        Sand Rush<br>
+                    </p>
+                    <p>Os Pokémon a seguir estão banidos:<br>
+                        Gligar<br>
+                        Meditite<br>
+                        Misdreavus<br>
+                        Murkrow<br>
+                        Scraggy<br>
+                        Scyther<br>
+                        Sneasel<br>
+                        Tangela<br>
+                        Vulpix<br>
+                        Yanma<br>
+                    </p>
+                    <p>O item Berry Juice está banido</p>
+                </div>
+
+                <div id="geracao6">
+                    <h1>6ª Geração</h1>
+                    <p>A sexta geração diz respeito aos jogos Pokémon X, Pokémon Y, Pokémon Omega Ruby e 
+                        Pokémon Alpha Saphire.
+                        A batalha será realizada nos jogos Pokémon Omega Ruby e Pokémon Alpha Saphire,
+                        permitindo a participação de Pokémon obtidos nos jogos anteriores, incluindo os que
+                        foram obtidos em outras gerações.
+                    </p>
+
+                    <div>
+                        <div>Índice</div>
+                        <ul>
+                            <li>
+                                <a href="#6REGRAS">
+                                    <span>1</span>
+                                    <span>Regras Gerais</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#6MOD">
+                                    <span>2</span>
+                                    <span>Modalidades</span>
+                                </a>
+                                <li>
+                                    <a href="#6OUNOMEGA">
+                                        <span>2.1</span>
+                                        <span>Over Used sem Mega Evoluções</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6OUMEGA">
+                                        <span>2.2</span>
+                                        <span>Over Used com Mega Evoluções</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6OUSHINY">
+                                        <span>2.3</span>
+                                        <span>Over Used Shiny</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6DOUNOMEGA">
+                                        <span>2.4</span>
+                                        <span>Doubles sem Mega Evoluções</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6DOUVGC">
+                                        <span>2.5</span>
+                                        <span>Doubles VGC</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#6LC">
+                                        <span>2.6</span>
+                                        <span>Little Cup</span>
+                                    </a>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h2 id="6REGRAS">Regras Gerais</h2>
+                    <p>Abaixo estão regras que se aplicam para todas as modalidades.</p>
+                    <p>Cláusula das Espécies:<br>
+                        Um jogador não pode ter dois Pokémon com o mesmo número na pokedéx nacional.
+                    </p>
+                    <p>Cláusula da Evasão:<br>
+                        Um Pokémon não pode ter os movimentos Double Team ou Minimize.
+                    </p>
+                    <p>Cláusula OHKO:<br>
+                        Os movimentos Fissure, Sheer Cold, Guillotine e Horn Drill são proibidos.
+                    </p>
+                    <p>Cláusula do Sono:<br>
+                        Só é permitido induzir um Pokémon para dormir na equipe do adversário por vez.
+                    </p>
+                    <p>Cláusula Moody:<br>
+                        A habilidade Moody está banida por ser completamente aleatória e ir contra o espírito 
+                        esportivo.
+                    </p>
+                    <p>Cláusula da Batalha Infinita:<br>
+                        É proibido um Pokémon segurar uma Leppa Berry com o movimento Recycle e qualquer um
+                        dos outros movimentos citados abaixo:<br>
+                        Heal Pulse<br>
+                        Milk Drink<br>
+                        Moonlight<br>
+                        Morning Sun<br>
+                        Recover<br>
+                        Roost<br>
+                        Slack Off<br>
+                        Soft-Boiled<br>
+                        Wish<br>
+                        Pain Split<br>
+                        Fling<br>
+                    </p>
+
+                    <h2 id="6MOD">Modalidades</h2>
+
+                    <h3 id="6OUNOMEGA">Over Used sem Mega Evoluções</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Over Used (OU, ou muito utilizado) é o tier de baseado em uso fundamental da 
+                        Smogon. Com a excessão dos Pokémon banidos para o tier Uber, todos os Pokémon
+                        podem ser usados no OU, incluindo Pokémon de tiers inferiores.Apesar disso, apenas 
+                        aqueles Pokémon que representam pelo menos ~ 3,41% do uso total ponderado do tier 
+                        são designados como 'OU'. Um Pokémon é verdadeiramente 'OU' se um jogador competitivo 
+                        típico tiver mais de 50% de probabilidade de encontrar aquele Pokémon pelo menos 
+                        a cada 20 batalhas.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Estão banidos os Pokémon pertencentes ao tier 
+                        <a href="https://www.smogon.com/dex/xy/formats/uber/">Ubers</a>
+                    </p>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Batton Pass<br>
+                        Swagger<br>
+                    </p>
+                    <p>As seguites habilidades estão banidas:<br>
+                        Arena Trap<br>
+                        Shadow Tag<br>
+                    </p>
+                    <p>É proibido o uso de Mega Evoluções</p>
+
+
+
+                    <h3 id="6OUMEGA">Over Used com Mega Evoluções</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Over Used (OU, ou muito utilizado) é o tier de baseado em uso fundamental da 
+                        Smogon. Com a excessão dos Pokémon banidos para o tier Uber, todos os Pokémon
+                        podem ser usados no OU, incluindo Pokémon de tiers inferiores.Apesar disso, apenas 
+                        aqueles Pokémon que representam pelo menos ~ 3,41% do uso total ponderado do tier 
+                        são designados como 'OU'. Um Pokémon é verdadeiramente 'OU' se um jogador competitivo 
+                        típico tiver mais de 50% de probabilidade de encontrar aquele Pokémon pelo menos 
+                        a cada 20 batalhas.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Estão banidos os Pokémon pertencentes ao tier 
+                        <a href="https://www.smogon.com/dex/xy/formats/uber/">Ubers</a>
+                    </p>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Batton Pass<br>
+                        Swagger<br>
+                    </p>
+                    <p>As seguites habilidades estão banidas:<br>
+                        Arena Trap<br>
+                        Shadow Tag<br>
+                    </p>
+
+
+
+                    <h3 id="6OUSHINY">Over Used Shiny</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Over Used (OU, ou muito utilizado) é o tier de baseado em uso fundamental da 
+                        Smogon. Com a excessão dos Pokémon banidos para o tier Uber, todos os Pokémon
+                        podem ser usados no OU, incluindo Pokémon de tiers inferiores.Apesar disso, apenas 
+                        aqueles Pokémon que representam pelo menos ~ 3,41% do uso total ponderado do tier 
+                        são designados como 'OU'. Um Pokémon é verdadeiramente 'OU' se um jogador competitivo 
+                        típico tiver mais de 50% de probabilidade de encontrar aquele Pokémon pelo menos 
+                        a cada 20 batalhas.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Estão banidos os Pokémon pertencentes ao tier 
+                        <a href="https://www.smogon.com/dex/xy/formats/uber/">Ubers</a>
+                    </p>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Batton Pass<br>
+                        Swagger<br>
+                    </p>
+                    <p>As seguites habilidades estão banidas:<br>
+                        Arena Trap<br>
+                        Shadow Tag<br>
+                    </p>
+                    <p>Todos os Pokémon devem ser Shiny</p>
+
+
+
+                    <h3 id="6DOUNOMEGA">Doubles sem Mega Evoluções</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Doubles (Doubles OU) é um formato onde ambos os jogadores 
+                        possuem dois Pokémon em campo ao mesmo tempo. Todos os Pokémon com excessão daqueles 
+                        que foram banidos (lista abaixo) podem ser usados independentemente de sua performance 
+                        em batalhas 1 contra 1.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Cláusula Gravity Sleep:<br>
+                        É proibido o uso do movimento Gravity com outros movimentos capazes de induzir sono
+                        e que tenham uma precisão abaixo de 100%.
+                    </p>
+                    <p>Os Pokémon a seguir estão banidos:<br>
+                        Mewtwo<br>
+                        Lugia<br>
+                        Ho-oh<br>
+                        Kyogre<br>
+                        Groudon<br>
+                        Rayquaza<br>
+                        Jirachi<br>
+                        Dialga<br>
+                        Palkia<br>
+                        Giratina<br>
+                        Giratina-Origin<br>
+                        Arceus<br>
+                        Reshiram<br>
+                        Zekrom<br>
+                        Kyurem-White<br>
+                        Xerneas<br>
+                        Yveltal<br>
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Dark Void<br>
+                        Swagger<br>
+                    </p>
+                    <p>O item Soul Dew está banido</p>
+                    <p>É proibido o uso de Mega Evoluções</p>
+                    
+
+
+                    <h3 id="6DOUVGC">Doubles VGC</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Doubles (Doubles OU) é um formato onde ambos os jogadores 
+                        possuem dois Pokémon em campo ao mesmo tempo. Esse formato específico consiste na 
+                        combinação do formato Doubles tradicional com a regra da VGC 2016 que liberava o 
+                        uso de dois Pokémon restritos (lista abaixo).
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula de Itens:<br>
+                        Cada Pokémon deve ter um item único, não podendo haver dois itens iguais em dois
+                        Pokémon distintos numa mesma equipe.
+                    </p>
+                    <p>Cláusula Gravity Sleep:<br>
+                        É proibido o uso do movimento Gravity com outros movimentos capazes de induzir sono
+                        e que tenham uma precisão abaixo de 100%.
+                    </p>
+                    <p>Só poderão ser utilizados dois dos Pokémon a seguir:<br>
+                        Mewtwo<br>
+                        Lugia<br>
+                        Ho-oh<br>
+                        Kyogre<br>
+                        Groudon<br>
+                        Rayquaza<br>
+                        Jirachi<br>
+                        Dialga<br>
+                        Palkia<br>
+                        Giratina<br>
+                        Giratina-Origin<br>
+                        Arceus<br>
+                        Reshiram<br>
+                        Zekrom<br>
+                        Kyurem-White<br>
+                        Xerneas<br>
+                        Yveltal<br>
+                        Latios com Soul Dew<br>
+                        Latias com Soul Dew<br>
+                        Mega Salamence<br>
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Dark Void<br>
+                        Swagger<br>
+                    </p>
+                    
+
+
+
+                    <h3 id="6LC">Little Cup</h3>
+
+                    <h4>Introdução</h4>
+                    <p>
+                        Little Cup é um formato em que os jogadores só podem usar Pokémon que ainda 
+                        não evoluíram, mas são capazes de evoluir.
+                    </p>
+
+                    <h4>Regras</h4>
+                    <p>Cláusula Level 5:<br>
+                        Todos os Pokémon devem estar no nível 5.
+                    </p>
+                    <p>Os movimentos a seguir estão banidos:<br>
+                        Swagger<br>
+                        Dragon Rage<br>
+                        Sonic Boom<br>
+                    </p>
+                    <p>Os Pokémon a seguir estão banidos:<br>
+                        Gligar<br>
+                        Meditite<br>
+                        Misdreavus<br>
+                        Murkrow<br>
+                        Scyther<br>
+                        Swirlix<br>
+                        Sneasel<br>
+                        Tangela<br>
+                        Vulpix<br>
+                        Yanma<br>
+                        Drifloon<br>
+                    </p>
+                </div>
+
+                <div id="geracao7">
+                    <h1>7ª Geração</h1>
+                    <p>A sétima geração diz respeito aos jogos Pokémon Sun, Pokémon Moon, Pokémon Ultra Sun e 
+                        Pokémon Ultra Moon.
+                        A batalha será realizada nos jogos Pokémon Ultra Sun e Pokémon Ultra Moon,
+                        permitindo a participação de Pokémon obtidos nos jogos anteriores, incluindo os que
+                        foram obtidos em outras gerações.
+                    </p>
+
+                </div>
+
+                <div id="ajuda"></div>
+            </div>
+
+            <div id="rodapé"></div>
+        
+            <script src="./JS/script.js"></script>
+        </body>
+    </html>
